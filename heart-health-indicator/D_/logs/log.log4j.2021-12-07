@@ -1,0 +1,90 @@
+[ERROR] 2021-12-07 20:32:00,492(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 20:32:51,625(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 20:36:54,146(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 20:37:21,272(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 20:40:28,760(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 20:43:57,709(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 21:02:55,695(1) --> [main] org.apache.spark.internal.Logging.logError(Logging.scala:94): Error initializing SparkContext.  
+org.apache.spark.SparkException: A master URL must be set in your configuration
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:394)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2672)
+	at org.apache.spark.sql.SparkSession$Builder.$anonfun$getOrCreate$2(SparkSession.scala:945)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:939)
+	at LogisticRegressionWithElasticNetExample$.main(LogisticRegressionWithElasticNetExample.scala:10)
+	at LogisticRegressionWithElasticNetExample.main(LogisticRegressionWithElasticNetExample.scala)
+[ERROR] 2021-12-07 21:03:13,470(0) --> [main] org.apache.spark.internal.Logging.logError(Logging.scala:94): Error initializing SparkContext.  
+org.apache.spark.SparkException: A master URL must be set in your configuration
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:394)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2672)
+	at org.apache.spark.sql.SparkSession$Builder.$anonfun$getOrCreate$2(SparkSession.scala:945)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:939)
+	at LogisticRegressionWithElasticNetExample$.main(LogisticRegressionWithElasticNetExample.scala:10)
+	at LogisticRegressionWithElasticNetExample.main(LogisticRegressionWithElasticNetExample.scala)
+[ERROR] 2021-12-07 21:14:02,754(1) --> [main] org.apache.spark.internal.Logging.logError(Logging.scala:73): Classification labels should be in {0 to 9}. Found 146354 invalid labels  
+[ERROR] 2021-12-07 21:20:35,824(0) --> [main] org.apache.spark.internal.Logging.logError(Logging.scala:73): org.apache.spark.SparkException: Job 3 cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1(DAGScheduler.scala:1085)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1$adapted(DAGScheduler.scala:1083)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:78)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:1083)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:2463)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:84)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2369)
+	at org.apache.spark.SparkContext.$anonfun$stop$12(SparkContext.scala:2069)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1419)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2069)
+	at org.apache.spark.SparkContext.$anonfun$new$37(SparkContext.scala:661)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1996)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:868)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2196)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2291)
+	at org.apache.spark.rdd.RDD.$anonfun$fold$1(RDD.scala:1183)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:414)
+	at org.apache.spark.rdd.RDD.fold(RDD.scala:1177)
+	at org.apache.spark.rdd.RDD.$anonfun$treeAggregate$1(RDD.scala:1246)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:414)
+	at org.apache.spark.rdd.RDD.treeAggregate(RDD.scala:1222)
+	at org.apache.spark.ml.optim.loss.RDDLossFunction.calculate(RDDLossFunction.scala:61)
+	at org.apache.spark.ml.optim.loss.RDDLossFunction.calculate(RDDLossFunction.scala:47)
+	at breeze.optimize.CachedDiffFunction.calculate(CachedDiffFunction.scala:24)
+	at breeze.optimize.FirstOrderMinimizer.calculateObjective(FirstOrderMinimizer.scala:51)
+	at breeze.optimize.FirstOrderMinimizer.initialState(FirstOrderMinimizer.scala:45)
+	at breeze.optimize.FirstOrderMinimizer.iterations(FirstOrderMinimizer.scala:97)
+	at org.apache.spark.ml.classification.LogisticRegression.trainImpl(LogisticRegression.scala:961)
+	at org.apache.spark.ml.classification.LogisticRegression.$anonfun$train$1(LogisticRegression.scala:627)
+	at org.apache.spark.ml.util.Instrumentation$.$anonfun$instrumented$1(Instrumentation.scala:191)
+	at scala.util.Try$.apply(Try.scala:209)
+	at org.apache.spark.ml.util.Instrumentation$.instrumented(Instrumentation.scala:191)
+	at org.apache.spark.ml.classification.LogisticRegression.train(LogisticRegression.scala:494)
+	at org.apache.spark.ml.classification.LogisticRegression.train(LogisticRegression.scala:285)
+	at org.apache.spark.ml.Predictor.fit(Predictor.scala:151)
+	at logicalDF$.main(logicalDF.scala:22)
+	at logicalDF.main(logicalDF.scala)
+  
+[ERROR] 2021-12-07 21:22:34,953(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 21:29:12,980(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 22:00:22,143(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 22:01:12,878(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 22:04:55,909(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 22:12:46,719(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 22:17:28,157(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 22:19:58,993(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
+[ERROR] 2021-12-07 22:20:48,215(0) --> [main] breeze.util.LazyLogger.error(LazyLogger.scala:27): Failure! Resetting history: breeze.optimize.StepSizeUnderflow:   
